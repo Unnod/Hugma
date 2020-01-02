@@ -1,5 +1,15 @@
 $(function(){
 
+    $('.header__images').slick({
+        arrows: false,
+        dots: false,
+        autoplay: true,
+        speed: 1000,
+        autoplaySpeed: 5000,
+        fade: true,
+
+    });
+
     $('.btn__menu').on('click',function(){
         $('.menu-list').addClass('active');
         $('.header__menu-inner').addClass('active');
