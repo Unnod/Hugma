@@ -30,7 +30,19 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-twitter:before {
+    content: "\f099";
+  }
+  .icon-facebook:before {
+    content: "\f09a";
+  }
+  .icon-facebook-f:before {
+    content: "\f09a";
+  }
+  .icon-pinterest-p:before {
+    content: "\f231";
+  }
   .icon-arrow-right2:before {
     content: "\ea3c";
-}
+  }
   
