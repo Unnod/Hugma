@@ -148,8 +148,95 @@
     cursor: pointer;
 }
 
-
 //end header
+
+//start programs
+
+.programs{
+    margin-top: 115px;
+    margin-bottom: 115px;
+    &__title{
+        text-align: center;
+        font-size: 30px;
+        @include f700;
+        color: #000;
+        margin-bottom: 120px;
+        text-transform: uppercase;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        max-height: 594.4px;
+        background-color: #ff1b22;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-img{
+            transition: all .5s;
+            width: 270px;
+            height: 500px;
+            margin-bottom: 30px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &-title{
+            text-transform: uppercase;
+            font-size: 14px;
+            @include f700;
+            margin-bottom: 30px;
+        }
+        &-btn{
+            a{
+                transition: all .5s;
+                height: 0;
+                font-size: 12px;
+                overflow: hidden;
+                text-transform: uppercase; 
+                color: #fff;
+                @include f700;
+                border: 0px solid #fff;
+                padding: 0px 20px;
+                width: 70px;
+                display: inline-block;
+                position: relative;
+                &::before{
+                    transition: all .3s;
+                    content: "\ea3c";
+                    font-family: 'icomoon';
+                    font-size: 12px;
+                    color: #fff;
+                    position: absolute;
+                    right: 10px;
+                } 
+                &:hover{
+                    background-color: #fff;
+                    color: #ff1b22;
+                    &::before{
+                        color: #ff1b22;
+                    }
+                }
+            }  
+        }
+        &:hover{
+            .programs__item-img{
+                height: 375px;
+               
+            }
+            .programs__item-btn{
+                a{
+                    padding: 15px 20px;
+                    height: auto;
+                    border-width: 1px;  
+                }
+                
+            }
+        }
+    }
+}
+
+//end programs
 
 
 @import '_media.scss';
