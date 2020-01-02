@@ -258,6 +258,7 @@
         flex-wrap: wrap;
     }
     &__item{
+        transition: all .3s;
         padding: 10px;
         max-width: 570px;
         width: 100%;
@@ -277,6 +278,8 @@
             padding: 15px;
         }
         &-name{
+            display: inline-block;
+            transition: all .3s;
             text-transform: uppercase;
             font-size: 14px;
             @include f700;
@@ -284,12 +287,14 @@
             margin-bottom: 15px;
         }
         &-type{
+            transition: all .3s;
             text-transform: uppercase;
             font-size: 12px;
             color: #cb1174;
             margin-bottom: 15px;
         }
         &-text{
+            transition: all .3s;
             color: #000;
             font-size: 13px;
             @include os;
@@ -297,6 +302,7 @@
         }
         &-social{
             a{
+                transition: all .3s;
                 display: inline-block;
                 width: 30px;
                 height: 30px;
@@ -305,6 +311,7 @@
                 text-align: center;
                 &::before{
                     top: 0;
+                    color: #000;
                     line-height: 30px;
                 }
                 & + a{
@@ -312,22 +319,29 @@
                 }
                 &:hover{
                     background-color: #fff;
-                    color: #00aeff;
-                    .coaches__item{
-                        background-color: #0071bc;
-                    }
-                    .coaches__item-name{
-                        color: #fff;
-                    }
-                    .coaches__item-type{
-                        color: #4f4c86;
-                    }
-                    .coaches__item-text{
-                        color: #fff;
-                    }
                 }
             }
         }
+        &:hover{
+            background-color: #0071bc;
+            .coaches__item-social{
+                a{
+                    &:before{
+                        color: #00aeff;
+                    }  
+                }
+            }
+            .coaches__item-name{
+                color: #fff;
+            }
+            .coaches__item-type{
+                color: #4f4c86;
+            }
+            .coaches__item-text{
+                color: #fff;
+            }
+        }
+        
     }
 }
 
