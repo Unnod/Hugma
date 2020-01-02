@@ -1,0 +1,15 @@
+@mixin f700 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+@mixin os {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+@mixin osi {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
