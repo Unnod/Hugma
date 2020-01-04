@@ -30,6 +30,9 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-heart-o:before {
+    content: "\f08a";
+  }
   .icon-twitter:before {
     content: "\f099";
   }
@@ -48,7 +51,9 @@
   .icon-pinterest-p:before {
     content: "\f231";
   }
+  .icon-instagram:before {
+    content: "\f16d";
+  }
   .icon-arrow-right2:before {
     content: "\ea3c";
   }
-  

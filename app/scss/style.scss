@@ -521,5 +521,68 @@
 
 //end testimonials
 
+//start instagram
+
+.instagram{
+    &__inner{
+        display: flex;
+        position: relative;
+    }
+    &__link{
+        a{
+            color: #fff;
+            text-align: center;
+            background-color: red;
+            line-height: 50px;
+            z-index: 1;
+            position: absolute;
+            border: 2px solid #fff;
+            width: 50px;
+            height: 50px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    &__item{
+        width: 25%;
+        background-color: #000;
+        position: relative;
+        &:hover{
+            .instagram__item-links{
+                a{
+                    opacity: 1;
+                }
+            }
+            .instagram__item-img{
+                opacity: 0.5;
+            }
+        }
+        &-img{
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 480px;
+            transition: all .3s;
+        }
+        &-links{
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            a{
+                transition: all .3s;
+                opacity: 0;
+                color: #fff;
+                & + a{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+//end instagram
+
 
 @import '_media.scss';
