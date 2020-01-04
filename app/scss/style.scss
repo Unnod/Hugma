@@ -7,6 +7,9 @@
 .header{
     min-height: 1000px;
     position: relative;
+    &__container{
+        padding: 0 100px;
+    }
     &__images{
         z-index: -1;
         position: absolute;
@@ -583,6 +586,76 @@
 }
 
 //end instagram
+
+//start footer
+
+.footer{
+    padding-bottom: 70px;
+    background-color: #30394d;
+    height: 480px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__col{
+        max-width: 445px;
+        width: 100%;
+        &-small{
+            max-width: 150px;
+        }
+        &-title{
+            text-transform: uppercase;
+            font-size: 16px;
+            margin-top: 60px;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 40px;
+                height: 1px;
+                background-color: #5c8bcb;
+                bottom: 0;
+            }
+        }
+        &-text{
+            font-size: 13px;
+            color: #cce2ff;
+            @include os;
+        }
+        &-date{
+            margin-top: 15px;
+            font-size: 13px;
+            color: #00aeff;
+            margin-bottom: 45px;
+            @include os;
+        }
+        .timetable-list{
+            li{
+                font-size: 13px;
+                color: #cce2ff;
+                & + li{
+                    margin-top: 15px;
+                }
+            }
+        }
+        .social-list{
+            li{
+                display: inline-block;
+                & + li{
+                    margin-left: 15px;
+                }
+                a{
+                    color: #fff;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+//end footer
 
 
 @import '_media.scss';
