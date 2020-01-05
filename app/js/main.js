@@ -24,4 +24,8 @@ $(function(){
         $('span').removeClass('active');
     });
 
+    $('.btn--mobile').on('click', function (){
+        $('.menu-list').slideToggle();
+    })
+
 });

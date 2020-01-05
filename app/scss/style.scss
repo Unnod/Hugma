@@ -58,7 +58,8 @@
         position: relative;
     }
     ul{
-        transition: all .5s;
+        display: block;
+        transition: all .3s;
         transform: translate3d(2000px, 0, 0);
         &.active{
             transform: translate3d(0, 0, 0);
@@ -149,6 +150,12 @@
 
 .close-menu{
     cursor: pointer;
+}
+
+nav{
+    .btn--mobile{
+        display: none;
+    }
 }
 
 //end header
