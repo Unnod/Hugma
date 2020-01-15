@@ -43,3 +43,86 @@
     }
     
 }
+
+@media(max-width:1000px){
+    .posts__inner{
+        flex-wrap: wrap;
+    }
+    .posts .post{
+        flex-basis: calc(100% - 30px);
+        margin-left: 0;
+    }
+    .posts__item .item-text {
+        width: auto;
+    }
+    .posts__item.item {
+        flex-basis: 100%;
+    }
+}
+
+@media(max-width:850px){
+    .programs__item{
+        flex-basis: calc(50% - 15px);
+    }
+    .coaches__item{
+        flex-basis: calc(100% - 30px);
+    }
+    .item-img {
+        margin-right: 10px;
+    }
+    .testimonials__box-imgbox{
+        transform: translate(-5%, -25%);
+        img{
+            width: 380px;
+           
+        }
+    }
+    .instagram__item {
+        flex-basis: calc(50%);
+    }
+    .footer__inner{
+        flex-wrap: wrap;
+    }
+    .hugma__col{
+        max-width: 100%;
+    }
+}
+
+@media(max-width:700px){
+    .header__container{
+        padding: 0 20px;
+    }
+    .header__title span {
+        font-size: 70px;
+    }
+    .header__title{
+        font-size: 35px;
+    }
+    .header__text {
+        font-size: 15px;
+    }
+
+    .posts__item .item-img {
+        margin-right: 5px;
+    }
+}
+@media(max-width:500px){
+    .testimonials__box-imgbox{
+        transform: translate(0%, 13%);
+        img{
+            width: 250px;
+        }
+    }
+}
+
+@media(max-width:450px){
+    .programs__inner{
+        align-items: center;
+        text-align: center;
+    }
+    .programs__item{
+        margin: 0 auto;
+        margin-bottom: 60px;
+        flex-basis: calc(80% - 15px);
+    }
+}

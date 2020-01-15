@@ -176,18 +176,23 @@ nav{
         margin-bottom: 120px;
     }
     &__inner{
+        flex-wrap: wrap;
         display: flex;
         justify-content: space-between;
+        margin-left: -15px;
     }
     &__item{
+        margin-bottom: 60px;
+        margin-left: 15px;
         max-height: 594.4px;
+        flex-basis: calc(25% - 15px);
         background-color: #ff1b22;
         display: flex;
         flex-direction: column;
         align-items: center;
         &-img{
             transition: all .5s;
-            width: 270px;
+            width: 100%;
             height: 500px;
             margin-bottom: 30px;
             background-size: cover;
@@ -201,6 +206,7 @@ nav{
             margin-bottom: 30px;
         }
         &-btn{
+            margin-bottom: 30px;
             a{
                 transition: all .5s;
                 height: 0;
@@ -233,10 +239,7 @@ nav{
             }  
         }
         &:hover{
-            .programs__item-img{
-                height: 375px;
-               
-            }
+          
             .programs__item-btn{
                 a{
                     padding: 15px 20px;
@@ -258,7 +261,6 @@ nav{
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 1040px;
     &__title{
         color: #fff;
         margin-bottom: 115px;
@@ -267,13 +269,15 @@ nav{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        margin-left: -30px;
     }
 }
 
 .item{
     transition: all .3s;
     padding: 10px;
-    width: 570px;
+    flex-basis: calc(50% - 30px);
+    margin-left: 30px;
     background-color: #fff;
     display: flex;
     margin-bottom: 30px;
@@ -378,17 +382,22 @@ nav{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1180px;
     &__title{
         color: #fff;
         margin-bottom: 115px;
     }
     &__inner{
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
+        margin-left: -30px;
+    }
+    .post{
+        flex-basis: calc(50% - 30px);
+        margin-left: 30px;
     }
     &__item{
         padding: 0;
+        width: 100%;
         margin-bottom: 30px;
         .item-img{
             width: 100%;
@@ -467,9 +476,9 @@ nav{
     }
     &__box{
         margin-top: 620px;
+        min-height: 260px;
         background-color: $blue;
         width: 100%;
-        height: 285px;
         color: #fff;
         padding: 20px;
         position: relative;
@@ -510,6 +519,7 @@ nav{
             margin-bottom: 60px;
         }
         &-btns{
+            margin-bottom: 30px;
             display: flex;
             a{
                 transition: all .3s;
@@ -537,6 +547,7 @@ nav{
     &__inner{
         display: flex;
         position: relative;
+        flex-wrap: wrap;
     }
     &__link{
         a{
@@ -555,7 +566,7 @@ nav{
         }
     }
     &__item{
-        width: 25%;
+        flex-basis: calc(25%);
         background-color: #000;
         position: relative;
         &:hover{
@@ -599,12 +610,12 @@ nav{
 .footer{
     padding-bottom: 70px;
     background-color: #30394d;
-    height: 480px;
     &__inner{
         display: flex;
         justify-content: space-between;
     }
     &__col{
+        margin-right: 15px;
         max-width: 445px;
         width: 100%;
         &-small{
